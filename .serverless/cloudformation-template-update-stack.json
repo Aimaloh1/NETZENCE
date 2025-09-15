@@ -180,7 +180,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-crud/dev/1757888417087-2025-09-14T22:20:17.087Z/api-crud.zip"
+          "S3Key": "serverless/api-crud/dev/1757934477706-2025-09-15T11:07:57.706Z/api-crud.zip"
         },
         "Handler": "functions/create.create",
         "Runtime": "nodejs18.x",
@@ -210,7 +210,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-crud/dev/1757888417087-2025-09-14T22:20:17.087Z/api-crud.zip"
+          "S3Key": "serverless/api-crud/dev/1757934477706-2025-09-15T11:07:57.706Z/api-crud.zip"
         },
         "Handler": "functions/read.read",
         "Runtime": "nodejs18.x",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-crud/dev/1757888417087-2025-09-14T22:20:17.087Z/api-crud.zip"
+          "S3Key": "serverless/api-crud/dev/1757934477706-2025-09-15T11:07:57.706Z/api-crud.zip"
         },
         "Handler": "functions/update.update",
         "Runtime": "nodejs18.x",
@@ -270,7 +270,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-crud/dev/1757888417087-2025-09-14T22:20:17.087Z/api-crud.zip"
+          "S3Key": "serverless/api-crud/dev/1757934477706-2025-09-15T11:07:57.706Z/api-crud.zip"
         },
         "Handler": "functions/delete.delete",
         "Runtime": "nodejs18.x",
@@ -293,44 +293,44 @@
         "DeleteItemLogGroup"
       ]
     },
-    "CreateItemLambdaVersionhqpXw1LSdUSZYYwv4yXCswoF8C3qPtOw9AoQwbuA14": {
+    "CreateItemLambdaVersionADaIYpmXfM9Tb34a46urJ1Ur4kCOBaIflzijVY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateItemLambdaFunction"
         },
-        "CodeSha256": "wu/Ec3R95c/G5AMYjCwV0GhjFgWIeFBWefmZbZ5awro="
+        "CodeSha256": "XiBpzdzU3lWZHZwgHLxTU0Lua5LwkL121tzQzNCa2v0="
       }
     },
-    "ReadItemLambdaVersionAvjvnZdZ9BvMbN5KgguN0Ii9MqjgDbopNKBWQeU5A": {
+    "ReadItemLambdaVersiond9Jlnx9ucTo8fJ0AmIIo1lntgFRhGeg596TfBlxDo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadItemLambdaFunction"
         },
-        "CodeSha256": "wu/Ec3R95c/G5AMYjCwV0GhjFgWIeFBWefmZbZ5awro="
+        "CodeSha256": "XiBpzdzU3lWZHZwgHLxTU0Lua5LwkL121tzQzNCa2v0="
       }
     },
-    "UpdateItemLambdaVersionmWaxbeRk69nKanTv9gjYqQjiyhMyCOvWoIIhPnb2qI": {
+    "UpdateItemLambdaVersionu0tg457vQYnsVlIJxWrNnGVeAEVDYlQWYdTHp0tY0lE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateItemLambdaFunction"
         },
-        "CodeSha256": "wu/Ec3R95c/G5AMYjCwV0GhjFgWIeFBWefmZbZ5awro="
+        "CodeSha256": "XiBpzdzU3lWZHZwgHLxTU0Lua5LwkL121tzQzNCa2v0="
       }
     },
-    "DeleteItemLambdaVersionSxRTiwEBr7O1ear19PT2wa7fJSUGnVc1U9IDY9q2V9Q": {
+    "DeleteItemLambdaVersionqMe6WaFU6I6s4vxCGgb4kkONlTkMpprobIiLE1R2mg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteItemLambdaFunction"
         },
-        "CodeSha256": "wu/Ec3R95c/G5AMYjCwV0GhjFgWIeFBWefmZbZ5awro="
+        "CodeSha256": "XiBpzdzU3lWZHZwgHLxTU0Lua5LwkL121tzQzNCa2v0="
       }
     },
     "ApiGatewayRestApi": {
@@ -556,7 +556,7 @@
         "DeleteItemLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1757888416078": {
+    "ApiGatewayDeployment1757934476686": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -751,7 +751,7 @@
     "CreateItemLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateItemLambdaVersionhqpXw1LSdUSZYYwv4yXCswoF8C3qPtOw9AoQwbuA14"
+        "Ref": "CreateItemLambdaVersionADaIYpmXfM9Tb34a46urJ1Ur4kCOBaIflzijVY"
       },
       "Export": {
         "Name": "sls-api-crud-dev-CreateItemLambdaFunctionQualifiedArn"
@@ -760,7 +760,7 @@
     "ReadItemLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadItemLambdaVersionAvjvnZdZ9BvMbN5KgguN0Ii9MqjgDbopNKBWQeU5A"
+        "Ref": "ReadItemLambdaVersiond9Jlnx9ucTo8fJ0AmIIo1lntgFRhGeg596TfBlxDo"
       },
       "Export": {
         "Name": "sls-api-crud-dev-ReadItemLambdaFunctionQualifiedArn"
@@ -769,7 +769,7 @@
     "UpdateItemLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateItemLambdaVersionmWaxbeRk69nKanTv9gjYqQjiyhMyCOvWoIIhPnb2qI"
+        "Ref": "UpdateItemLambdaVersionu0tg457vQYnsVlIJxWrNnGVeAEVDYlQWYdTHp0tY0lE"
       },
       "Export": {
         "Name": "sls-api-crud-dev-UpdateItemLambdaFunctionQualifiedArn"
@@ -778,7 +778,7 @@
     "DeleteItemLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteItemLambdaVersionSxRTiwEBr7O1ear19PT2wa7fJSUGnVc1U9IDY9q2V9Q"
+        "Ref": "DeleteItemLambdaVersionqMe6WaFU6I6s4vxCGgb4kkONlTkMpprobIiLE1R2mg"
       },
       "Export": {
         "Name": "sls-api-crud-dev-DeleteItemLambdaFunctionQualifiedArn"
