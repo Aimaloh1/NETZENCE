@@ -1,0 +1,14 @@
+### Your software platform is growing rapidly. You have an increasing number of users, leading to an increase in data volume.
+##   Implement a standardised workload characterisation model for the platform.
+
+_____
+
+As our platform scales and user activity grows,
+I anticipate increasing workloads and data volume.
+From a DevOps perspective, I implement a standardized workload
+characterization model using tools like AWS CloudWatch, Prometheus,
+and Grafana to monitor CPU, memory, storage, network, application activity, and user behavior.
+I categorize workloads as batch, interactive, streaming, compute-intensive, or I/O-intensive,
+and collect data continuously to detect patterns and potential bottlenecks.
+By integrating this data into automated dashboards and alerts, I can standardize and automate workload profiling,
+proactively allocate resources, optimize costs, and ensure the platform remains reliable and scalable as demand increases.
