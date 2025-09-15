@@ -1,0 +1,48 @@
+service: api-crud
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    TABLE_NAME: CrudTable
+
+functions:
+  createItem:
+    handler: functions/create.create
+    events:
+      - http:
+          path: items
+          method: post
+  readItem:
+    handler: functions/read.read
+    events:
+      - http:
+          path: items/{id}
+          method: get
+  updateItem:
+    handler: functions/update.update
+    events:
+      - http:
+          path: items/{id}
+          method: patch
+  deleteItem:
+    handler: functions/delete.delete
+    events:
+      - http:
+          path: items/{id}
+          method: delete
+
+resources:
+  Resources:
+    CrudTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: CrudTable
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
