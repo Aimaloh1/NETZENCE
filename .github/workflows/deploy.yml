@@ -30,9 +30,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Setup Serverless access key
-        run: npx serverless config credentials --key ${{ secrets.SERVERLESS_ACCESS_KEY }}
-
       - name: Deploy Lambda
         run: npx serverless deploy --stage dev
 
