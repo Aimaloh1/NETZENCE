@@ -2,7 +2,7 @@
 const { DynamoDB } = require("aws-sdk");
 const db = new DynamoDB.DocumentClient();
 
-module.exports.handler = async (event) => {
+module.exports.update = async (event) => {
   const id = event.pathParameters.id;
   const body = JSON.parse(event.body);
 
